@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox em CSS</title>
+</head>
+<body>
+    <h1>FLEXBOX</h1>
+    <section>
+       <ul>
+        <li>ESTRUTURA BÁSICA</li>
+        <li>PROPRIEDADES: FLEX-CONTAINER E FLEX ITEM </li>
+       </ul>
+       <p>
+        <strong>FLEX-CONTAINER:</strong> Ela transforma seus filhos diretos em flex itens, independente
+        do valor, eles são alinhados a partir do momento que são inicializados com 
+        <strong>DISPLAY-FLEX.</strong>
+       </p>
+       <b>PROPRIEDADES RELACIONADAS:</b><br>
+       <article><strong>DISPLAY:</strong> Inicializador do container.<br>
+       <strong>FLEX-DIRECTION:</strong> Faz direcionamento dos itens, em linha ou coluna.<br>
+       <strong>FLEX-WRAP:</strong> Aplica-se para quebra de linha ou não.<br>
+       <strong>FLEX-FLOW:</strong> Abreviação de <b>DIRECTION & WRAP.</b><br>
+       <strong>JUSTIFY-CONTENT:</strong> Alinha os itens do container de acordo com sua direção.<br>
+       <strong>ALIGN-ITEMS:</strong> Alinha os itens de acordo com seu eixo.<br>
+       <strong>ALIGN-CONTENT:</strong> Alinha as linhas do container.<br></article>
+    </section>
+    <article>
+        <section>
+            <h3>FLEX ITEM</h3>
+            <p>São os elementos filhos diretos do flex-container, e também podem se
+                 tornar flex-container.</p>
+                 <div class="flex">
+                    <div class="item">item 1</div>
+                    <div class="item">item 2</div>
+                    <div class="item">item 3</div>
+                 </div>
+                 <!-- COLOCAR CONTAINER COM OS TRES FLEX ITEM DENTRO COLORIDOS -->
+
+        </section>
+        <section>
+            <article>
+            Os <b>FLEX-ITEM</b> também possuem propriedades relacionadas: <br>
+            <strong>FLEX-GROW:</strong> Define fator de crescimento.<br>
+            <strong>FLEX-BASIS:</strong> Define o tamanho inicial do item antes da distribuição
+            do espaço restante dentro do container.<br>
+            <strong>FLEX-SHRINK:</strong> Define a capacidade de redução.<br>
+            <strong>FLEX:</strong> Abreviação das 3 acima citadas.<br>
+            <strong>ORDER:</strong> Relacionada a ordem de distribuição e listagem 
+            dos itens.<br>
+            <strong>ALIGN-SELF:</strong> Define o alinhamento de um item específico no 
+            container.<br>
+            </article>
+        </section>
+    </article>
+
+    <div>
+        <p> <strong> PRATICAS COM FLEX DIRECTION </strong></p>
+
+        <section>
+            <b>ROW</b>
+            <ul class="flex-container row">
+                <li class="flex-item">1</li>
+                <li class="flex-item">2</li>
+                <li class="flex-item">3</li>
+                <li class="flex-item">4</li>
+                <li class="flex-item">5</li>
+            </ul>
+        </section>
+        <section>
+            <b>ROW-REVERSE</b>
+            <ul class="flex-container row-reverse">
+                <li class="flex-item">1</li>
+                <li class="flex-item">2</li>
+                <li class="flex-item">3</li>
+                <li class="flex-item">4</li>
+                <li class="flex-item">5</li>
+            </ul>
+        </section>
+        <b>COLUMN</b>
+        <ul class="flex-container column">
+            <li class="flex-item">1</li>
+            <li class="flex-item">2</li>
+            <li class="flex-item">3</li>
+            <li class="flex-item">4</li>
+            <li class="flex-item">5</li>
+        </ul>
+        <b>COLUMN-REVERSE</b>
+        <ul class="flex-container column-reverse">
+            <li class="flex-item">1</li>
+            <li class="flex-item">2</li>
+            <li class="flex-item">3</li>
+            <li class="flex-item">4</li>
+            <li class="flex-item">5</li>
+        </ul>
+    </div>
+
+ 
+</body>
+</html>
